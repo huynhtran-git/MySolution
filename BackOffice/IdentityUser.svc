@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="BackOffice.IdentityUser" CodeBehind="IdentityUser.svc.cs" %>

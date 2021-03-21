@@ -1,0 +1,8 @@
+.user-card {
+  max-width: 500px;
+}
+
+.user-image {
+  background-image: url('../../assets/img/biden.jpg');
+  background-size: cover;
+}

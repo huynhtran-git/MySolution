@@ -1,0 +1,24 @@
+<h3 id="tableLabel">Nuclear Weapons Stockpile Management</h3>
+
+<p>Specific types of ICBMs (current, past and under development) in US:</p>
+
+<p *ngIf="!nuclearWeapons"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="nuclearWeapons">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>NATO Name</th>
+      <th>Maximum Range (Km)</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let forecast of nuclearWeapons">
+      <td>{{ forecast.type }}</td>
+      <td>{{ forecast.natoName }}</td>
+      <td>{{ forecast.maxRange }}</td>
+      <td>{{ forecast.status }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,7 @@
+D:\SPA\MySolution\BackOffice\bin\BackOffice.dll.config
+D:\SPA\MySolution\BackOffice\bin\BackOffice.dll
+D:\SPA\MySolution\BackOffice\bin\BackOffice.pdb
+D:\SPA\MySolution\BackOffice\obj\Debug\BackOffice.csprojAssemblyReference.cache
+D:\SPA\MySolution\BackOffice\obj\Debug\BackOffice.csproj.CoreCompileInputs.cache
+D:\SPA\MySolution\BackOffice\obj\Debug\BackOffice.dll
+D:\SPA\MySolution\BackOffice\obj\Debug\BackOffice.pdb

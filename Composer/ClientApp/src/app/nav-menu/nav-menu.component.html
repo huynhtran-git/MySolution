@@ -1,0 +1,57 @@
+<header>
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-primary border-bottom box-shadow mb-3"
+  >
+    <div class="container">
+      <a class="navbar-brand text-white text-monospace font-weight-bold"
+        [routerLink]="['/']"
+        style="font-size: 1.5rem;"
+      >
+        Composer
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+        *ngIf="isLogin"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+        [ngClass]="{ show: isExpanded }"
+        *ngIf="isLogin"
+      >
+        <ul class="navbar-nav flex-grow">
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link text-white" [routerLink]="['/']">Home</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-white" [routerLink]="['/nuclear-weapon']"
+              >Nuclear Weapon</a
+            >
+          </li>
+          <li>
+            <button mat-button [matMenuTriggerFor]="menu">
+              <mat-icon class="text-white">power_settings_new</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item (click)="logout()">
+                <mat-icon>logout</mat-icon>
+                <span>Log out</span>
+              </button>
+            </mat-menu>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
